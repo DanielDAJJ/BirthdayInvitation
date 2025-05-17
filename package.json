@@ -1,0 +1,32 @@
+{
+  "name": "cumple",
+  "version": "1.0.0",
+  "description": "Proyecto para invitacion  de cumpleaños, desarrollo de base de datos y front",
+  "keywords": [
+    "Birthday",
+    "Cumpleanos",
+    "Henry"
+  ],
+  "homepage": "https://github.com/DanielDAJJ/BirthdayInvitation#readme",
+  "bugs": {
+    "url": "https://github.com/DanielDAJJ/BirthdayInvitation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielDAJJ/BirthdayInvitation.git"
+  },
+  "license": "ISC",
+  "author": "Daniel Alejandro Jaimes Jiménez",
+  "type": "module",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./src/app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.3"
+  }
+}
