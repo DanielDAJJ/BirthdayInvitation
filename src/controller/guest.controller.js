@@ -14,7 +14,7 @@ export const getGuests = async (req, res) => {
 }
 export const createGuest = async (req, res) => {
     try {
-        const {name, isComing, companions, message} = req.body;
+        const {name, isComing, companion, message} = req.body;
         if (!name || typeof isComing !== 'boolean') {
             return res.status(400).json({ error: "Faltan datos requeridos" });
         }
@@ -25,7 +25,7 @@ export const createGuest = async (req, res) => {
         const newGuest = new Guest({
             name,
             isComing,
-            companions,
+            companion,
             message: !isComing ? message : "",
         });
         const savedGuest = await newGuest.save();
